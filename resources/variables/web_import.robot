@@ -9,14 +9,19 @@ ${pay9-agent-dev}     https://agent-dev.pay9.co
 
 #---------------------Merchant ----------------#
 ${url_merchant_dev}      https://merchant-dev.pay9.co/merchant/5435f6a8-1f83-442c-b787-38762f82e7cd/product
+${url_merchant_uat}      https://merchant-uat.pay9.co/merchant/7f2036e6-1420-4282-9ff7-c6a4accb0498/category
 ${xpath_product_menu}    //*[@id="app"]/div/nav/div[1]/div/div[2]/div/div[1]/div[2]/div
 ${xpath_product_list}    //*[@id="app"]/div/nav/div[1]/div/div[2]/div/div[2]/a[1]/div[2]/div
 ${xpath_category}        //*[@id="app"]/div/nav/div[1]/div/div[2]/div/div[2]/a[2]/div[2]/div
+${save_cat_btn}      //*[@class="d-flex"]/button[1]
+${create_cat_btn}      //*[@class="d-flex"]/button[2]
+${xpath_cat_list1}     //*[@class="px-10 py-10"]/div/div/div/div[1]
+${txt_cat_name}          //*[@class="v-card v-sheet theme--light"]/div[2]/div/span/div/div/span/div/div/div/div/input
 ${xpath_tags}            //*[@id="app"]/div/nav/div[1]/div/div[2]/div/div[2]/a[3]/div[2]/div
-# ${xpath_add_product}     //*[@id="app"]/div/main/div/div/div/div/div/div[2]/div/div[2]/a/span
-# ${txt_product_name}      //*[@class="pt-0 col col-6"]/span[1]/div
-# ${txt_brandname}         //*[@class="pt-0 col col-6"]/span[2]/div
-${txt_description}       //*[@id="input-189"]
+${xpath_add_product}     //*[@id="app"]/div/main/div/div/div/div/div/div[2]/div/div[2]/a/span
+${txt_product_name}      //*[@class="pt-0 col col-6"]/span[1]/div
+${txt_brandname}         //*[@class="pt-0 col col-6"]/span[2]/div
+${txt_description}       //*[@id="input-85"]
 ${txt_dropdown_cat}      //*[@id="app"]/div[1]/main/div/div/div/div/span/div/div[2]/div[1]/div[2]/div[2]/span[4]/div/div/div[1]/div[1]/div[2]
 ${category_1}            //*[@id="list-item-272-0"]/div/div
 ${txt_sku}               //*[@id="input-202"]
@@ -31,7 +36,7 @@ ${txt_item_width}        //*[@id="input_logistic_width"]
 ${btn_create_product}    //*[@id="app"]/div[1]/main/div/div/div/div/span/div/div[2]/div[5]/div[2]/button/span
 
 
-#${product_name}     Macbook air M1
+${product_name}     Macbook air M1
 ${brandname}        Macbook
 ${description}      Review | MacBook Air M1 เทียบกับ MacBook Pro M1 แรงต่างกันมากไหม ซื้อรุ่นไหนดี
 ${sku}              MAC1001

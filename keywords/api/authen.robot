@@ -1,16 +1,18 @@
 *** Variables ***
 ${dev-url}     https://dev.pay9.co
-${mobile_no}   +66900000001
+${uat-url}     https://uat.pay9.co
+#${mobile_no}   +66900000001
 
 *** Keywords ***
-Agent request otp
+Request otp
+    [Arguments]    ${mobile_no}
     &{header}=    Create Dictionary    
     ...    Accept=application/json
     ...    Content-Type=application/json
     &{body}=    Create Dictionary
     ...    fcm_instance_id=-
     ...    phone_number=${mobile_no}
-    ${end_point}=   Set Variable    ${dev-url}/api/auth/v1/otp/request
+    ${end_point}=   Set Variable    ${uat-url}/api/auth/v1/otp/request
     #${end_point}=   Remove Redundant characters From URL    ${end_point}
     ${response}=    REST.POST    endpoint=${end_point}    headers=&{header}    body=&{body}
     REST.Integer    response status    200
@@ -18,7 +20,7 @@ Agent request otp
     ${otp}=   Get Value From Json     ${response}     $..otp
     [Return]     ${otp}[0]
 
-Agent validate otp and get token
+Validate otp and get token
     [Arguments]    ${mobile_no}    ${otp} 
     &{header}=    Create Dictionary    
     ...    Accept=application/json
@@ -26,7 +28,7 @@ Agent validate otp and get token
     &{body}=    Create Dictionary
     ...    passcode=${otp}
     ...    phone_number=${mobile_no}
-    ${end_point}=   Set Variable    ${dev-url}/api/auth/v1/otp/validate
+    ${end_point}=   Set Variable    ${uat-url}/api/auth/v1/otp/validate
     #${end_point}=   Remove Redundant characters From URL    ${end_point}
     ${response}=    REST.POST    endpoint=${end_point}    headers=&{header}    body=&{body}
     REST.Integer    response status    200

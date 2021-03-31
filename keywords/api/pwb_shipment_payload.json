@@ -1,0 +1,21 @@
+{
+    "shipmentRequestId": "CDS_SA_10138-STGCO2103240010578-01",
+    "orderId": "STGCO2103240010578",
+    "method": "PWB",
+    "packages": [{
+      "carrier": "Kerry",
+      "trackingLink": "https://th.kerryexpress.com/th/track/",
+      "trackingNo": "Kerry-STGCO2103240010578",
+      "trackingComment": "",
+      "id": "STGCO2103240010578",
+      "items": [1]
+    }],
+    "items": [{
+      "mcomShipmentRequestId": "CDS_SA_10138-STGCO2103240010578-01",
+      "orderLineId": "83835",
+      "sku": "242186",
+      "orderLineNumber": 1,
+      "status": "SHIPPED"
+    }
+   ]
+}
