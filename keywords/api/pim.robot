@@ -48,5 +48,5 @@ Verify sku create on PIM
     Should Be Equal As Strings    ${product_sku}[0]     ${sku} 
 
 
-    git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+    git config --global user.email "nathakrit.p@gmail.com"
+  git config --global user.name "Bond-z"

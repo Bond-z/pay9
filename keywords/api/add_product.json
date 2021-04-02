@@ -1,0 +1,48 @@
+{
+  "brand": "James Bond",
+  "category_id": 232,
+  "commission": 10,
+  "cost": 20,
+  "detail": "Automated Product",
+  "discount": true,
+  "enabled": true,
+  "has_options": true,
+  "image": [
+    "/Users/nathakrit/Downloads/candy_test.jpeg"
+  ],
+  "logistic": {
+    "delivery": true,
+    "height": 10,
+    "length": 10,
+    "weight": 1,
+    "width": 10
+  },
+  "merchant_id": "7f2036e6-1420-4282-9ff7-c6a4accb0498",
+  "name": "Candy",
+  "options": [
+    {
+      "commission": 5.05,
+      "cost": 10.05,
+      "discount": true,
+      "id": "string",
+      "name": "10ml.",
+      "retail_price": 20.05,
+      "sku": "a0001",
+      "stock_amount": 100,
+      "unit": "ขวด",
+      "wholesale_price": 15.05
+    }
+  ],
+  "retail_price": 20.05,
+  "sku": "a0001",
+  "stock_amount": 100,
+  "suggestion": true,
+  "tag": [
+    "tag"
+  ],
+  "unit": "ขวด",
+  "video": [
+    ""
+  ],
+  "wholesale_price": 15.05
+}
