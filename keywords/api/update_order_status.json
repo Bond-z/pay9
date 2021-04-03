@@ -1,0 +1,111 @@
+{
+  "order": {
+    "after_discount_amount": 0,
+    "billing_address": {
+      "account_type": "string",
+      "address": "string",
+      "company_name": "string",
+      "contact_name": "string",
+      "phone_number": "string",
+      "post_code": "string",
+      "tax_id": "string"
+    },
+    "canceled_at": "string",
+    "canceled_by": "string",
+    "comm_amount": 0,
+    "created_at": "string",
+    "created_by": "string",
+    "customer": {
+      "address": "string",
+      "email": "string",
+      "id": "string",
+      "name": "string",
+      "phone_number": "string",
+      "postcode": "string",
+      "role": "string"
+    },
+    "delivery": {
+      "contact_name": "string",
+      "delivery_date": "string",
+      "delivery_number": "string",
+      "id": 0,
+      "latitude": 0,
+      "location": "string",
+      "longitude": 0,
+      "method": "string",
+      "receive_time": "string",
+      "recipient_address": "string",
+      "recipient_name": "string",
+      "recipient_phone": "string",
+      "ref_type": 0,
+      "ref_uuid": "string",
+      "shipping_name": "string",
+      "shipping_uuid": "string",
+      "status": 0,
+      "tracking_number": "string",
+      "updated_at": "string",
+      "updated_by": "string",
+      "uuid": "string"
+    },
+    "discount_amount": 0,
+    "discount_word": "string",
+    "id": "string",
+    "is_cancel": 0,
+    "is_paid_comm": 0,
+    "items": [
+      {
+        "amount": 0,
+        "images": [
+          "string"
+        ],
+        "is_sub_set": true,
+        "minimum_order": true,
+        "name": "string",
+        "price": 0,
+        "product_id": "string",
+        "qty": 0,
+        "sku": "string",
+        "unit": "string",
+        "variation_uuid": "string"
+      }
+    ],
+    "logistic": {
+      "delivery": true,
+      "height": 10,
+      "length": 10,
+      "weight": 1,
+      "width": 10
+    },
+    "merchant_location": "string",
+    "merchant_logo": "string",
+    "merchant_name": "string",
+    "merchant_uuid": "string",
+    "note_customer": "string",
+    "note_internal": "string",
+    "order_no": "string",
+    "payment": {
+      "amount": 0,
+      "bank": "string",
+      "method": "string",
+      "paid_at": "string",
+      "slip_image": "string"
+    },
+    "receive_date": "string",
+    "receive_time": "string",
+    "ref": "string",
+    "ref_type": 0,
+    "ref_uuid": "string",
+    "remark": "string",
+    "sale_channel": "string",
+    "shipping_amount": 0,
+    "status": 0,
+    "status_en": "string",
+    "status_th": "string",
+    "sum_item_amount": 0,
+    "sum_of_qty": 0,
+    "total_amount": 0,
+    "updated_at": "string",
+    "updated_by": "string"
+  }
+}
+
