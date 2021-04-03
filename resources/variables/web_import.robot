@@ -3,7 +3,7 @@ Resource    ../../common.robot
 
 
 *** Variables ***
-${pay9-agent-dev}     https://agent-dev.pay9.co
+${pay9-agent-uat}     https://agent-uat.pay9.co
 
 
 

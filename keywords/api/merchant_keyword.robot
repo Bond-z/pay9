@@ -28,7 +28,7 @@ Add category
     ...    Content-Type=application/json
     ...    X-Access-Token=${token}
     #${body}=    JSONLibrary.Load JSON From File    add_category.json
-    ${body}=    Set Variable     {"categories": [{"id": 0,"name": "${cat_name_create}","sub_categories": [null]}],"merchant_id": "7f2036e6-1420-4282-9ff7-c6a4accb0498"}
+    ${body}=    Set Variable     {"categories": [{"id": 0,"name": "${cat_name_create}"}],"merchant_id": "7f2036e6-1420-4282-9ff7-c6a4accb0498"}
     ${body}=    Convert String To Json    ${body}
     # ${body_request}=    JSONLibrary.Update Value To Json    ${body}    $..categories.id    555
     # ${body_request}=    JSONLibrary.Update Value To Json    ${body}    $..categories.name    Candy222
@@ -64,14 +64,12 @@ Create product
     ...    Content-Type=application/json
     ...    X-Access-Token=${token}
     ${body}=    JSONLibrary.Load JSON From File    ${CURDIR}/add_product.json
-    # ${body}=    Set Variable     {"category_id": ${cat_id},"merchant_id": "7f2036e6-1420-4282-9ff7-c6a4accb0498"}
-    # ${body}=    Convert String To Json    ${body} 
-    # ${end_point}=   Set Variable    ${uat-url}/api/merchant/v2/product/create
-    # #${end_point}=   Remove Redundant characters From URL    ${end_point}
-    # ${response}=    REST.POST    endpoint=${end_point}    headers=&{header}    body=${body}
-    # REST.Integer    response status    200
-    # ${response}=    REST.Output    response body
-    # [Return]     ${response}
+    ${end_point}=   Set Variable    ${uat-url}/api/merchant/v2/product/create
+    ${response}=    REST.POST    endpoint=${end_point}    headers=&{header}    body=${body}
+    REST.Integer    response status    200
+    ${response}=    REST.Output    response body
+    [Return]     ${response}
+
     
 
     

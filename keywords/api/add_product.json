@@ -1,6 +1,6 @@
 {
   "brand": "James Bond",
-  "category_id": 232,
+  "category_id": 239,
   "commission": 10,
   "cost": 20,
   "detail": "Automated Product",
@@ -34,13 +34,13 @@
     }
   ],
   "retail_price": 20.05,
-  "sku": "a0001",
+  "sku": "AUTO007",
   "stock_amount": 100,
   "suggestion": true,
   "tag": [
     "tag"
   ],
-  "unit": "ขวด",
+  "unit": "ถุง",
   "video": [
     ""
   ],

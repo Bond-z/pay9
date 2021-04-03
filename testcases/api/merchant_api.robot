@@ -2,9 +2,9 @@
 Resource    ../../common.robot
 
 *** Variables ***
-${token}    94c75a90455e49a9aa1e96705b25233f
-${cat_name_create}    Test_add_category
-${cat_id}    235
+${token}    5edf2cabd592416eba010c6c5ed58f38
+${cat_name_create}    Automated_category
+${cat_id}    239
 
 *** Test Cases ***
 Merchant get token
@@ -17,7 +17,7 @@ Merchant get otp
 
 Verify otp    
     [Tags]    verify_otp
-    ${token}=    Validate otp and get token    +66643659596    6207
+    ${token}=    Validate otp and get token    +66643659596    4812
 
 Merchant get category list
     [Tags]    category_list
@@ -34,6 +34,8 @@ Merchant delete category
 Merchant create product
     [Tags]    create_product
     Create product     ${token}   
+
+
 
 
     
