@@ -8,7 +8,7 @@
   "enabled": true,
   "has_options": true,
   "image": [
-    "/Users/nathakrit/Downloads/candy_test.jpeg"
+    "${CURDIR}/../../../../Downloads/candy_test.jpeg"
   ],
   "logistic": {
     "delivery": true,
