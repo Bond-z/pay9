@@ -1,9 +1,19 @@
 *** Settings ***
+Library    Selenium2Library
 Resource    ../../common.robot
 
 
 *** Variables ***
 ${pay9-agent-uat}     https://agent-uat.pay9.co
+${pay9-agent-dev}     https://agent-dev.pay9.co
+${agent-mobile_no}    0811000001
+${otp-mock}    1111
+${txt-mobile_no}    //*[@class="card"]/div/div/div/input                 #//*[@class="v-form"]/div[2]/div/div/div/div/div/input      Pay9 platform
+${btn-login}    //*[@class="card"]/div/div/div/button                    #//*[@class="v-form"]/div[2]/div/div/div[2]/button        Pay9 platform
+${txt-otp}      //*[@class="card"]/div/div/div/input                     #//*[@class="v-form"]/div[2]/div/div/div/div/div/input   Pay9 platform
+${btn-submit-otp}    //*[@class="card"]/div/div/div/button               #//*[@class="v-form"]/div[2]/div/div/div[2]/button     Pay9 platform
+${uat-url}     https://uat.pay9.co
+#${mobile_no}   +66900000001
 
 
 
@@ -45,4 +55,19 @@ ${retail_price}     30000
 ${wholesale_price}     15000
 ${stock_amount}     9
 ${youtube_link}     https://www.youtube.com/watch?v=ZXFll99nPMg
+
+#----------------- Agent --------------------#
+${img-1}    //*[@class="table-responsive"]/table/tr/td[1]/div/div[1]/div[1]/img[1]
+${img-2}    //*[@class="table-responsive"]/table/tr/td[2]/div/div[1]/div[1]/img[1]
+${add-qty}    //*[@class="col-6 d-flex justify-content-around align-items-center"]/i[2]
+${add-to-cart-btn}    //*[@class="page-main container pb-5"]/div/div[2]/div/div/div[4]/div/button
+${cart-icon}    //*[@class="col-4 pr-0"]/div/div[1]/img
+${select-shop}    //*[@id="__layout"]/div/div[2]/div[2]/div/span/div/div/div/img[2]
+${create-quo}    //*[@class="sum-block"]/div[1]/div[2]/div/button
+${ok-btn}    //*[@class="swal2-container swal2-center swal2-backdrop-show"]/div/div[3]/button[3]
+
+
+
+${product-1}    //*[@class="table-responsive"]/table/tr/td[1]/div/div
+
 

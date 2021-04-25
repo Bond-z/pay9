@@ -21,3 +21,5 @@ Get category list
     ${cat_name}=   Get Value From Json     ${response}     $..categories[*].name
     [Return]     ${cat_name}[0]
 
+
+
