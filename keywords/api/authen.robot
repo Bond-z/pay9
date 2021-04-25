@@ -1,8 +1,3 @@
-*** Variables ***
-${dev-url}     https://dev.pay9.co
-${uat-url}     https://uat.pay9.co
-#${mobile_no}   +66900000001
-
 *** Keywords ***
 Request otp
     [Arguments]    ${mobile_no}
