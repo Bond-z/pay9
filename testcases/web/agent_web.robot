@@ -11,6 +11,11 @@ Agent create quotation and send to user via email
     Select shop
     Add product to cart 
 
+# Verify shop landing page / homepage
+
+
+# Verify shop 
+
 
 
 
