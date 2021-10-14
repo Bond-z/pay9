@@ -1,134 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.9.0 on darwin)" generated="20211013 00:09:35.478" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.9.0 on darwin)" generated="20211014 00:03:04.969" rpa="false" schemaversion="2">
 <suite id="s1" name="Agent Web" source="/Users/nathakrit/Documents/pay9/testcases/web/agent_web.robot">
 <test id="s1-t1" name="Agent create quotation and send to user via email">
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0.5</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211013 00:09:36.075" endtime="20211013 00:09:36.076"/>
-</kw>
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Open agent browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
 <kw name="Open agent browser" library="keywords_agent_web">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${pay9-agent-dev}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211013 00:09:36.077" level="INFO">Opening browser 'chrome' to base url 'https://agent-dev.pay9.co'.</msg>
-<status status="PASS" starttime="20211013 00:09:36.076" endtime="20211013 00:09:41.342"/>
+<msg timestamp="20211014 00:03:05.826" level="INFO">Opening browser 'chrome' to base url 'https://agent-dev.pay9.co'.</msg>
+<status status="PASS" starttime="20211014 00:03:05.825" endtime="20211014 00:03:13.359"/>
 </kw>
-<status status="PASS" starttime="20211013 00:09:36.076" endtime="20211013 00:09:41.342"/>
+<status status="PASS" starttime="20211014 00:03:05.825" endtime="20211014 00:03:13.359"/>
+</kw>
+<status status="PASS" starttime="20211014 00:03:05.825" endtime="20211014 00:03:13.359"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211014 00:03:13.360" endtime="20211014 00:03:13.361"/>
 </kw>
 <kw name="Minimize browser to mobile size" library="keywords_agent_web">
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>${400}</arg>
 <arg>${805}</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20211013 00:09:41.343" endtime="20211013 00:09:41.956"/>
+<status status="PASS" starttime="20211014 00:03:13.362" endtime="20211014 00:03:13.982"/>
 </kw>
-<status status="PASS" starttime="20211013 00:09:41.343" endtime="20211013 00:09:41.956"/>
+<status status="PASS" starttime="20211014 00:03:13.362" endtime="20211014 00:03:13.982"/>
 </kw>
 <kw name="Login with mobile_no" library="keywords_agent_web">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${txt-mobile_no}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211013 00:09:41.957" endtime="20211013 00:09:42.982"/>
+<status status="PASS" starttime="20211014 00:03:13.983" endtime="20211014 00:03:15.012"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${txt-mobile_no}</arg>
 <arg>${agent-mobile_no}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211013 00:09:42.983" level="INFO">Sending key(s) ('0811000001',) to //*[@class="card"]/div/div/div/input element.</msg>
-<msg timestamp="20211013 00:09:44.301" level="INFO">Sending keys 0811000001</msg>
-<status status="PASS" starttime="20211013 00:09:42.983" endtime="20211013 00:09:44.858"/>
+<msg timestamp="20211014 00:03:15.013" level="INFO">Sending key(s) ('0811000001',) to //*[@class="card"]/div/div/div/input element.</msg>
+<msg timestamp="20211014 00:03:16.348" level="INFO">Sending keys 0811000001</msg>
+<status status="PASS" starttime="20211014 00:03:15.012" endtime="20211014 00:03:16.914"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn-login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211013 00:09:44.858" level="INFO">Clicking element '//*[@class="card"]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20211013 00:09:44.858" endtime="20211013 00:09:45.919"/>
+<msg timestamp="20211014 00:03:16.914" level="INFO">Clicking element '//*[@class="card"]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20211014 00:03:16.914" endtime="20211014 00:03:17.985"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${txt-otp}</arg>
 <arg>${otp-mock}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211013 00:09:45.920" level="INFO">Sending key(s) ('1111',) to //*[@class="card"]/div/div/div/input element.</msg>
-<msg timestamp="20211013 00:09:47.194" level="INFO">Sending keys 1111</msg>
-<status status="PASS" starttime="20211013 00:09:45.919" endtime="20211013 00:09:47.706"/>
+<msg timestamp="20211014 00:03:17.987" level="INFO">Sending key(s) ('1111',) to //*[@class="card"]/div/div/div/input element.</msg>
+<msg timestamp="20211014 00:03:19.274" level="INFO">Sending keys 1111</msg>
+<status status="PASS" starttime="20211014 00:03:17.986" endtime="20211014 00:03:19.789"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn-submit-otp}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211013 00:09:47.706" level="INFO">Clicking element '//*[@class="card"]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20211013 00:09:47.706" endtime="20211013 00:09:48.742"/>
+<msg timestamp="20211014 00:03:19.789" level="INFO">Clicking element '//*[@class="card"]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20211014 00:03:19.789" endtime="20211014 00:03:20.835"/>
 </kw>
-<status status="PASS" starttime="20211013 00:09:41.957" endtime="20211013 00:09:48.742"/>
+<status status="PASS" starttime="20211014 00:03:13.982" endtime="20211014 00:03:20.836"/>
 </kw>
-<kw name="Select shop" library="keywords_agent_web">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${pay9-agent-dev}/13</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211013 00:09:48.744" level="INFO">Opening url 'https://agent-dev.pay9.co/13'</msg>
-<status status="PASS" starttime="20211013 00:09:48.743" endtime="20211013 00:09:49.613"/>
+<kw name="Select 1st shop" library="keywords_agent_web">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${select-1st-shop}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211014 00:03:20.837" endtime="20211014 00:03:22.947"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${select-1st-shop}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211014 00:03:23.968" level="INFO">Element '//*[@class="card position-relative"]/img[2]' is displayed.</msg>
+<status status="PASS" starttime="20211014 00:03:22.947" endtime="20211014 00:03:23.968"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select-1st-shop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211014 00:03:23.969" level="INFO">Clicking element '//*[@class="card position-relative"]/img[2]'.</msg>
+<status status="PASS" starttime="20211014 00:03:23.968" endtime="20211014 00:03:25.004"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${lbl-recomment}</arg>
+<arg>${lbl-recommended}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211013 00:09:49.613" endtime="20211013 00:09:50.636"/>
+<status status="PASS" starttime="20211014 00:03:25.005" endtime="20211014 00:03:26.037"/>
 </kw>
-<status status="PASS" starttime="20211013 00:09:48.743" endtime="20211013 00:09:50.636"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${lbl-recommended}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211014 00:03:27.059" level="INFO">${result} = สินค้าแนะนำ</msg>
+<status status="PASS" starttime="20211014 00:03:26.037" endtime="20211014 00:03:27.059"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>สินค้าแนะนำ</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211014 00:03:27.060" endtime="20211014 00:03:27.060"/>
+</kw>
+<status status="PASS" starttime="20211014 00:03:20.836" endtime="20211014 00:03:27.060"/>
 </kw>
 <kw name="Add product to cart" library="keywords_agent_web">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${product-1}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20211013 00:09:50.637" endtime="20211013 00:09:51.920"/>
+<status status="PASS" starttime="20211014 00:03:27.061" endtime="20211014 00:03:28.335"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${product-1}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211013 00:09:51.920" endtime="20211013 00:09:52.939"/>
+<status status="PASS" starttime="20211014 00:03:28.335" endtime="20211014 00:03:29.361"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${product-1}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211013 00:09:52.940" level="INFO">Clicking element '//*[@class="table-responsive"]/table/tr/td[1]/div/div'.</msg>
-<status status="PASS" starttime="20211013 00:09:52.939" endtime="20211013 00:09:53.983"/>
+<msg timestamp="20211014 00:03:29.362" level="INFO">Clicking element '//*[@class="table-responsive"]/table/tr/td[1]/div/div'.</msg>
+<status status="PASS" starttime="20211014 00:03:29.361" endtime="20211014 00:03:30.416"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${add-to-cart}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211013 00:09:53.983" endtime="20211013 00:09:55.001"/>
+<status status="PASS" starttime="20211014 00:03:30.417" endtime="20211014 00:03:31.445"/>
 </kw>
 <kw name="Click on add to cart button" library="keywords_agent_web">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${add-to-cart}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211013 00:09:55.002" level="INFO">Clicking element '//*[@class='container-fluid d-flex align-items-center']/div[2]/button'.</msg>
-<status status="PASS" starttime="20211013 00:09:55.002" endtime="20211013 00:09:56.036"/>
+<msg timestamp="20211014 00:03:31.446" level="INFO">Clicking element '//*[@class='container-fluid d-flex align-items-center']/div[2]/button'.</msg>
+<status status="PASS" starttime="20211014 00:03:31.446" endtime="20211014 00:03:32.497"/>
 </kw>
-<status status="PASS" starttime="20211013 00:09:55.001" endtime="20211013 00:09:56.036"/>
+<status status="PASS" starttime="20211014 00:03:31.445" endtime="20211014 00:03:32.497"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${cart-icon}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211013 00:10:07.271" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211013 00:10:06.669" endtime="20211013 00:10:07.271"/>
+<status status="PASS" starttime="20211014 00:03:27.060" endtime="20211014 00:03:32.498"/>
 </kw>
-<msg timestamp="20211013 00:10:07.275" level="FAIL">Element '//*[@class="navbar navbar-light container"]/div/div[2]/div/div[2]/img' not visible after 10 seconds.</msg>
-<status status="FAIL" starttime="20211013 00:09:56.036" endtime="20211013 00:10:07.276"/>
-</kw>
+<kw name="Click cart icon" library="keywords_agent_web">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${cart-icon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211013 00:10:07.276" endtime="20211013 00:10:07.276"/>
+<msg timestamp="20211014 00:03:32.498" level="INFO">Clicking element '//*[@class="container-fluid row pt-0 pr-0 pl-0"]/div[3]/div/div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211014 00:03:34.636" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-60.png"&gt;&lt;img src="selenium-screenshot-60.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211014 00:03:34.056" endtime="20211014 00:03:34.636"/>
 </kw>
-<status status="FAIL" starttime="20211013 00:09:50.636" endtime="20211013 00:10:07.276"/>
+<msg timestamp="20211014 00:03:34.644" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="text-center mr-2 Pay9noticart"&gt;...&lt;/div&gt; is not clickable at point (416, 29). Other element would receive the click: &lt;div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;"&gt;...&lt;/div&gt;
+  (Session info: chrome=94.0.4606.81)
+Stacktrace:
+0   chromedriver                        0x000000010f23b5e9 chromedriver + 2749929
+1   chromedriver                        0x000000010f8f25c3 chromedriver + 9790915
+2   chromedriver                        0x000000010efc6828 chromedriver + 174120
+3   chromedriver                        0x000000010f002791 chromedriver + 419729
+4   chromedriver                        0x000000010f0003ee chromedriver + 410606
+5   chromedriver                        0x000000010effdbda chromedriver + 400346
+6   chromedriver                        0x000000010effc827 chromedriver + 395303
+7   chromedriver                        0x000000010eff07a8 chromedriver + 346024
+8   chromedriver                        0x000000010f018712 chromedriver + 509714
+9   chromedriver                        0x000000010eff0535 chromedriver + 345397
+10  chromedriver                        0x000000010f01898e chromedriver + 510350
+11  chromedriver                        0x000000010f02ac6b chromedriver + 584811
+12  chromedriver                        0x000000010f018933 chromedriver + 510259
+13  chromedriver                        0x000000010efeed6e chromedriver + 339310
+14  chromedriver                        0x000000010eff0095 chromedriver + 344213
+15  chromedriver                        0x000000010f2023bf chromedriver + 2515903
+16  chromedriver                        0x000000010f214f2f chromedriver + 2592559
+17  chromedriver                        0x000000010f1e6bdf chromedriver + 2403295
+18  chromedriver                        0x000000010f2162da chromedriver + 2597594
+19  chromedriver                        0x000000010f1f7bcc chromedriver + 2472908
+20  chromedriver                        0x000000010f22f988 chromedriver + 2701704
+21  chromedriver                        0x000000010f22fb11 chromedriver + 2702097
+22  chromedriver                        0x000000010f2405e8 chromedriver + 2770408
+23  libsystem_pthread.dylib             0x00007fff2035d8fc _pthread_start + 224
+24  libsystem_pthread.dylib             0x00007fff20359443 thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211014 00:03:32.498" endtime="20211014 00:03:34.644"/>
+</kw>
+<status status="FAIL" starttime="20211014 00:03:32.498" endtime="20211014 00:03:34.645"/>
+</kw>
+<kw name="Run Keywords" library="BuiltIn" type="TEARDOWN">
+<arg>SeleniumLibrary.Close Browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211014 00:03:34.646" endtime="20211014 00:03:35.213"/>
+</kw>
+<status status="PASS" starttime="20211014 00:03:34.645" endtime="20211014 00:03:35.214"/>
 </kw>
 <tag>quotation</tag>
-<status status="FAIL" starttime="20211013 00:09:36.075" endtime="20211013 00:10:07.276">Element '//*[@class="navbar navbar-light container"]/div/div[2]/div/div[2]/img' not visible after 10 seconds.</status>
+<status status="FAIL" starttime="20211014 00:03:05.823" endtime="20211014 00:03:35.214">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="text-center mr-2 Pay9noticart"&gt;...&lt;/div&gt; is not clickable at point (416, 29). Other element would receive the click: &lt;div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;"&gt;...&lt;/div&gt;
+  (Session info: chrome=94.0.4606.81)
+Stacktrace:
+0   chromedriver                        0x000000010f23b5e9 chromedriver + 2749929
+1   chromedriver                        0x000000010f8f25c3 chromedriver + 9790915
+2   chromedriver                        0x000000010efc6828 chromedriver + 174120
+3   chromedriver                        0x000000010f002791 chromedriver + 419729
+4   chromedriver                        0x000000010f0003ee chromedriver + 410606
+5   chromedriver                        0x000000010effdbda chromedriver + 400346
+6   chromedriver                        0x000000010effc827 chromedriver + 395303
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010eff0095 chromedriver + 344213
+15  chromedriver                        0x000000010f2023bf chromedriver + 2515903
+16  chromedriver                        0x000000010f214f2f chromedriver + 2592559
+17  chromedriver                        0x000000010f1e6bdf chromedriver + 2403295
+18  chromedriver                        0x000000010f2162da chromedriver + 2597594
+19  chromedriver                        0x000000010f1f7bcc chromedriver + 2472908
+20  chromedriver                        0x000000010f22f988 chromedriver + 2701704
+21  chromedriver                        0x000000010f22fb11 chromedriver + 2702097
+22  chromedriver                        0x000000010f2405e8 chromedriver + 2770408
+23  libsystem_pthread.dylib             0x00007fff2035d8fc _pthread_start + 224
+24  libsystem_pthread.dylib             0x00007fff20359443 thread_start + 15</status>
 </test>
-<status status="FAIL" starttime="20211013 00:09:35.480" endtime="20211013 00:10:07.277"/>
+<status status="FAIL" starttime="20211014 00:03:04.971" endtime="20211014 00:03:35.216"/>
 </suite>
 <statistics>
 <total>
@@ -142,8 +228,8 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211013 00:09:35.804" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/common.robot' on line 4: Importing library 'HttpLibrary.HTTP' failed: Module 'HttpLibrary' does not contain 'HTTP'.</msg>
-<msg timestamp="20211013 00:09:36.065" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/keywords/web/keywords_agent_web.robot' on line 3: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'ExtendedSelenium2Library'
+<msg timestamp="20211014 00:03:05.402" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/common.robot' on line 4: Importing library 'HttpLibrary.HTTP' failed: Module 'HttpLibrary' does not contain 'HTTP'.</msg>
+<msg timestamp="20211014 00:03:05.809" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/keywords/web/keywords_agent_web.robot' on line 3: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'ExtendedSelenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -152,7 +238,7 @@ PYTHONPATH:
   /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9
   /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
   /Users/nathakrit/Documents/pay9/env/lib/python3.9/site-packages</msg>
-<msg timestamp="20211013 00:09:36.072" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/resources/variables/web_import.robot' on line 2: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20211014 00:03:05.819" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/resources/variables/web_import.robot' on line 2: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -161,5 +247,6 @@ PYTHONPATH:
   /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9
   /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
   /Users/nathakrit/Documents/pay9/env/lib/python3.9/site-packages</msg>
+<msg timestamp="20211014 00:03:05.820" level="ERROR">Error in file '/Users/nathakrit/Documents/pay9/common.robot' on line 18: Resource file '/Users/nathakrit/Documents/pay9/resources/variables/test_configs.yaml' does not exist.</msg>
 </errors>
 </robot>
