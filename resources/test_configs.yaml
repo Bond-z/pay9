@@ -1,0 +1,26 @@
+GLOBALTIMEOUT : 30
+SELENIUMSPEED : 0.5
+GLOBAL_SCROLL_TIMES : 5
+GLOBAL_SCALE_MIN : 0.1
+GLOBAL_SCALE_MEDIUM: 0.5
+GLOBAL_SCALE_MAX: 0.9
+timeout : 30
+
+# responsive variables configs
+WIDTH_MOB_WEB: 375
+HEIGHT_MOB_WEB: 812
+
+# qa-common variables
+devicesName: iPhone X
+browserName: chrome
+
+# command run test script variables
+BU: cds
+LANGUAGE: th
+TEST_PLATFORM: desktop
+ENV: sit
+IS_TRIBE: false
+HEADLESS_FLAG: false
+
+# Dynamic test data feature variables
+enable_dynamic_test_data: 'false'

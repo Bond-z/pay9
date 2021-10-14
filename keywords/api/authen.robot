@@ -32,8 +32,9 @@ Validate otp and get token
     [Return]     ${token}[0]
 
 Get token via mobile no
-    ${otp}=    Agent request otp
-    ${token}=    Agent validate otp and get token     ${mobile_no}    ${otp}    
+    [Arguments]    ${mobile_no}
+    ${otp}=    Request otp    ${mobile_no}
+    ${token}=    validate otp and get token     ${mobile_no}    ${otp}    
     [Return]     ${token}
     
 Get merchant

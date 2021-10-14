@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Selenium2Library
-Resource    ../../common.robot
+Resource    ${CURDIR}/../../common.robot
 
 
 *** Variables ***
@@ -13,7 +13,27 @@ ${btn-login}    //*[@class="card"]/div/div/div/button                    #//*[@c
 ${txt-otp}      //*[@class="card"]/div/div/div/input                     #//*[@class="v-form"]/div[2]/div/div/div/div/div/input   Pay9 platform
 ${btn-submit-otp}    //*[@class="card"]/div/div/div/button               #//*[@class="v-form"]/div[2]/div/div/div[2]/button     Pay9 platform
 ${uat-url}     https://uat.pay9.co
-#${mobile_no}   +66900000001
+${merchant-mobile_no}   +66900000001
+${select-1st-shop}    //*[@class="card position-relative"]/img[2]
+
+${lbl-recommended}    //*[@class="container p-0"]/h3      #//h3[contains(text(),'สินค้าแนะนำ')]
+${add-to-cart}    //*[@class='container-fluid d-flex align-items-center']/div[2]/button
+
+
+&{login_page}
+...    txt-mobile_no=xpath=//*[@class="card"]/div/div/div/input
+...    btn-login=xpath=//*[@class="card"]/div/div/div/button
+...    txt-otp=xpath=//*[@class="card"]/div/div/div/input
+...    btn-submit-otp=xpath=//*[@class="card"]/div/div/div/button
+
+
+# &{shop_landing_page}
+# ...    mnu_hamburger=xpath=//a[@data-testid='mnu-viewMenu-hamburger']
+# ...    lbl_login_register=xpath=//label[contains(text(),'${login_signup_dto.lbl_login_register}')]
+# ...    lbl_account_name=xpath=//*[./following-sibling::*/*[starts-with(@data-testid, 'mnu-viewMenuOnmobile')]]//*[text()="{$account_name}"]
+# ...    btn_mnu_hamburger_x=xpath=(//*[@id='layout']/div)[4]/*[@viewBox]
+# ...    txt_email=xpath=//*[@name='customerEmail']
+# ...    txt_password=xpath=//*[@name='customerPassword']
 
 
 
@@ -61,7 +81,7 @@ ${img-1}    //*[@class="table-responsive"]/table/tr/td[1]/div/div[1]/div[1]/img[
 ${img-2}    //*[@class="table-responsive"]/table/tr/td[2]/div/div[1]/div[1]/img[1]
 ${add-qty}    //*[@class="col-6 d-flex justify-content-around align-items-center"]/i[2]
 ${add-to-cart-btn}    //*[@class="page-main container pb-5"]/div/div[2]/div/div/div[4]/div/button
-${cart-icon}    //*[@class="col-4 pr-0"]/div/div[1]/img
+${cart-icon}    //*[@class="container-fluid row pt-0 pr-0 pl-0"]/div[3]/div/div[1]
 ${select-shop}    //*[@id="__layout"]/div/div[2]/div[2]/div/span/div/div/div/img[2]
 ${create-quo}    //*[@class="sum-block"]/div[1]/div[2]/div/button
 ${ok-btn}    //*[@class="swal2-container swal2-center swal2-backdrop-show"]/div/div[3]/button[3]

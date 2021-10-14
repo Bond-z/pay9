@@ -1,0 +1,10 @@
+agent_url: http://central.co.th/th
+mdc_url:    https://backend.central.co.th/rest/
+api_root:    https://backend.central.co.th/rest/
+graphql_root: https://falcon.central.co.th/graphql
+mcom_api_url: https://api-ap2.mcom.magento.com
+mcom_oauth_url: https://auth.bcn.magento.com
+mcom_client_id: centralgroup_qa
+mcom_client_secret: 928f0b68be9f
+token: pb9eb8hk4ajxhb45au091i733wpkkjwo
+store: th

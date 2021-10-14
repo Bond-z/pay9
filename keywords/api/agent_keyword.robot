@@ -1,8 +1,12 @@
+*** Settings ***
+Resource      ../../common.robot
+
 *** Variables ***
 ${dev-url}     https://dev.pay9.co
 ${uat-url}     https://uat.pay9.co
 ${mobile_no}   +66643659596
 ${merchant_id}    7f2036e6-1420-4282-9ff7-c6a4accb0498   
+
 
 *** Keywords ***
 Get category list
@@ -21,5 +25,5 @@ Get category list
     ${cat_name}=   Get Value From Json     ${response}     $..categories[*].name
     [Return]     ${cat_name}[0]
 
-
+  
 

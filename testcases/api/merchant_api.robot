@@ -9,7 +9,7 @@ ${cat_id}    239
 *** Test Cases ***
 Merchant get token
     [Tags]    authen
-    ${token}=    Get token via mobile no
+    ${token}=    authen.Get token via mobile no    ${merchant-mobile_no}
 
 Merchant get otp    
     [Tags]    otp
@@ -21,6 +21,7 @@ Verify otp
 
 Merchant get category list
     [Tags]    category_list
+    ${token}=    authen.Get token via mobile no    ${merchant-mobile_no}
     ${cat_name}=    Get category list    ${token}
 
 Merchant add category
