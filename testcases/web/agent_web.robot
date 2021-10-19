@@ -12,7 +12,22 @@ Agent create quotation and send to user via email
     Login with mobile_no
     Select 1st shop
     Add product to cart 
+    Sleep    3s
     Click cart icon
+    Select merchant
+    Add product qty on quotation page
+    Click create quotation button
+    Select customer
+    Sleep    5s
+    Click save quotation
+    Click quotation menu
+    Select 1st quotation
+    Click send email button
+    Click quotation menu
+    Verify quotation status after sent an email
+
+
+
 
 # Verify shop landing page / homepage
 
