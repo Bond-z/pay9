@@ -16,8 +16,25 @@ ${uat-url}     https://uat.pay9.co
 ${merchant-mobile_no}   +66900000001
 ${select-1st-shop}    //*[@class="card position-relative"]/img[2]
 
-${lbl-recommended}    //*[@class="container p-0"]/h3      #//h3[contains(text(),'สินค้าแนะนำ')]
+${lbl-recommended}    //*[@class="container p-0"]/div[1]/h3      #//h3[contains(text(),'สินค้าแนะนำ')]
 ${add-to-cart}    //*[@class='container-fluid d-flex align-items-center']/div[2]/button
+${checkbox-merchant}     //*[@class="text-left mt-1 p-1"]/div/div/div[1]/div/label    #//*[@id="checkboxMerchant0"]
+${add-qty}    //*[@class="container-fluid mt-2 mb-2"]/div[2]/div[2]/img[2]
+${btn-create-quo}    //*[@class="sum-block"]//button
+${badge-icon}    //*[@class="container-fluid pr-0"]//div/div[3]/div/div[1]//span
+${select-customer}    //*[@class="cardpage mb-1"]/div/div/div[2]
+${save-quotation}    //*[@class="w-100 mt-2"]/div/div/div[1]  
+${quotation-status}    //*[@class="container"]/span/div/div[1]/div/div/span[2]
+${cancel-quotation}    //*[@class="w-100 mt-2"]/div/div/div[3]
+${icon-quotation}    //*[@class="nav justify-content-center shadow-lg"]/li[2]/div
+${recent-quotation}    //*[@class="container"]/span/div/div[1]/div[2]/div[1]/div/div[2]/div[1]
+${btn-send-email}    //*[@class="row mb-2 mt-2"]/div[2]
+${lbl-send-email}    //*[@id="SendEmailModal"]/div/div/div/div/div[1]/div[1]/span
+${modal-send-email-btn}    //*[@id="SendEmailModal"]//button[2]
+${setup-expire-lbl}    //*[@class="card mt-1"]/div
+${select-expire-quo}    //*[@class="container-fluid mb-2"]/div/div[2]/span
+${date-picker-today}    //*[@class="ant-calendar-picker-container ant-calendar-picker-container-placement-bottomLeft"]//div[3]/span      #//*[@class="ant-calendar-picker-container ant-calendar-picker-container-placement-bottomLeft"]/div/div/div[2]/div[3]/span 
+
 
 
 &{login_page}
